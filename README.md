@@ -66,7 +66,7 @@ machines, grains, capsules et accessoires. Ce projet est un **site e‑commerce 
 Ce projet a été réalisé en binôme par :
 
 - 👩‍💻 [Safaa Mounkid](https://github.com/SafaaM1234)
-- 👨‍💻 [Marwa Maqsousi](https://github.com/Marwa-Maqsoudi)
+- 👩‍💻[Marwa Maqsousi](https://github.com/Marwa-Maqsoudi)
 
 ---
 
