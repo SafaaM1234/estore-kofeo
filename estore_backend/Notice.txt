@@ -1,0 +1,69 @@
+- Nom du projet : kofeo
+
+1.Demarrage:
+-Ouvrir le projet dans IntelliJ IDEA.
+-Verifier que Java 21 et Maven sont installes.
+-Lancer la classe EstoreBackendApplication.java
+
+2.Les URLs utiles :
+
+========== Customer ==========
+-Inscription(Post) -> http://localhost:8080/api/auth/register
+-Connexion(Post) -> http://localhost:8080/api/auth/login
+-getAllCustomers(Get) -> http://localhost:8080/api/customers
+-updateProfile(Put) -> http://localhost:8080/api/customers/{userId}/profile
+-deleteProfile(delete) -> http://localhost:8080/api/customers/profile/{profileId}
+
+
+========== Catalog ==========
+-getAllCategories(Get) -> http://localhost:8080/api/catalog/categories
+-getCategoryById(Get) -> http://localhost:8080/api/catalog/categories/{id}
+-addCategory(Post) -> http://localhost:8080/api/catalog/categories
+-updateCategory(Put) -> http://localhost:8080/api/catalog/categories/{id}
+-deleteCategory(Delete) -> http://localhost:8080/api/catalog/categories/{id}
+
+-getAllProducts(Get) -> http://localhost:8080/api/catalog/products
+-getProductById(Get) -> http://localhost:8080/api/catalog/products/{id}
+-searchProducts(Get) -> http://localhost:8080/api/catalog/products/search
+-getProductsByCategory(Get) -> http://localhost:8080/api/catalog/categories/{id}/products
+-addProduct(Post) -> http://localhost:8080/api/catalog/products
+-updateProduct(Put) -> http://localhost:8080/api/catalog/products/{id}
+-deleteProduct(Delete) -> http://localhost:8080/api/catalog/products/{id}
+
+
+========== Inventory ==========
+-getInventory(Get) -> http://localhost:8080/api/inventory/{productId}
+-createInventory(Post) -> http://localhost:8080/api/inventory
+-decreaseStock(Put) -> http://localhost:8080/api/inventory/{productId}/decrease/{quantity}
+-increaseStock(Put) -> http://localhost:8080/api/inventory/{productId}/increase/{quantity}
+-deleteInventory(Delete) -> http://localhost:8080/api/inventory/{productId}
+
+
+========== Shopping ==========
+-createCart(Post) -> http://localhost:8080/api/cart/create/{userId}
+-getCartByUser(Get) -> http://localhost:8080/api/cart/user/{userId}
+-addItem(Post) -> http://localhost:8080/api/cart/{cartId}/add/{productId}
+-updateItemQuantity(Put) -> http://localhost:8080/api/cart/item/{itemId}/update/{quantity}
+-removeItem(Delete) -> http://localhost:8080/api/cart/item/{itemId}
+-clearCart(Delete) -> http://localhost:8080/api/cart/{cartId}/clear
+
+
+========== Billing ==========
+-createOrder(Post) -> http://localhost:8080/api/orders/create/{userId}
+-validateOrder(Post) -> http://localhost:8080/api/orders/validate/{userId}
+-getOrderById(Get) -> http://localhost:8080/api/orders/{orderId}
+-getOrdersByUser(Get) -> http://localhost:8080/api/orders/user/{userId}
+-getOrderHistory(Get) -> http://localhost:8080/api/orders/user/{userId}/history
+
+-addOrderItem(Post) -> http://localhost:8080/api/orders/{orderId}/add/{productId}
+-updateItemQuantity(Put) -> http://localhost:8080/api/orders/item/{itemId}/update/{quantity}
+-updateOrderStatus(Put) -> http://localhost:8080/api/orders/{orderId}/status
+-removeOrderItem(Delete) ->  http://localhost:8080/api/orders/item/{itemId}
+
+
+========== Review ==========
+-createReview(Post) -> http://localhost:8080/api/reviews
+-getReviewByProduct(Get) -> http://localhost:8080/api/reviews/product/{productId}
+-getRating(Get) -> http://localhost:8080/api/reviews/product/{productId}/rating
+-updateReview(Put) -> http://localhost:8080/api/reviews/{id}
+-deleteReview(Delete) -> http://localhost:8080/api/reviews/{id}

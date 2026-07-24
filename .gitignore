@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# React build
+build/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE
+.idea/
+.vscode/
+
+# Java / Spring Boot
+target/
+
+# Logs
+*.log
