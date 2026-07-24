@@ -76,7 +76,7 @@ coffee machines, beans, capsules, and accessories. This project is a **complete 
 This project was developed as a team project by:
 
 * 👩‍💻 [Safaa Mounkid](https://github.com/SafaaM1234)
-* 👨‍💻 [Marwa Maqsousi](https://github.com/Marwa-Maqsousi)
+* 👩‍💻 [Marwa Maqsousi](https://github.com/Marwa-Maqsoudi)
 
 ---
 
